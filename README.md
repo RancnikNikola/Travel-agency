@@ -18,4 +18,3 @@ Responsive special offfers section
 
 Choose us section
 
-<img width="1440" alt="chooseus" src="https://user-images.githubusercontent.com/35330678/203741103-a667b7fd-b6b4-4d00-8b05-0358cae0d645.png">
