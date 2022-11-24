@@ -1,0 +1,939 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url('./img/desert.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.logo {
+    position: absolute;
+    left: 2vw;
+    top: 2vw;
+}
+
+.logo h1 {
+    color: white;
+    margin: 0;
+    font-size: 2.5vw;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+     display: inline-block;
+     margin-top: 2vw;
+     margin-right: 2vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.bottom-container div {
+    margin: 1vw;
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+}
+
+.letter-T {
+    background-image: url('./img/sea.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    font-size: 20vw;
+}
+
+.letter-R {
+    text-transform: uppercase;
+    font-size: 20vw;
+    background-image: url('./img/city.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.letter-A {
+    text-transform: uppercase;
+    font-size: 20vw;
+    background-image: url('./img/desert2.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.letter-V {
+    text-transform: uppercase;
+    font-size: 20vw;
+    background-image: url('./img/hotairbaloons.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.letter-E {
+    text-transform: uppercase;
+    font-size: 20vw;
+    background-image: url('./img/mountaint.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.letter-L {
+    text-transform: uppercase;
+    font-size: 20vw;
+    background-image: url('./img/parachutes.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.icons {
+    width: 10%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+}
+
+.icons ul {
+    list-style: none;
+}
+
+.icons ul li {
+    padding-top: 2vw;
+}
+
+.icons ul li a {
+    color: white;
+    font-size: 2vw;
+}
+
+.box1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.box2 a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.box2 a i {
+    padding-left: 1vw;
+}
+
+.box3 a {
+    color: white;
+    text-decoration: none;
+}
+
+.box3 a i {
+    padding-right: 0.5vw;
+}
+
+.sep {
+    color: white;
+}
+
+.bookings {
+    display: flex;
+    justify-content: space-evenly;
+}
+.input-group {
+    flex:1;  
+    display:flex;
+    flex-direction:column;
+}
+.arrows {
+    margin-top: 2vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.first {
+    display: flex;
+    position: relative;
+    padding: 1vw;
+    flex: 30%;
+}
+.first select {
+    padding: 0.5vw 1vw;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+  }
+.first label {
+    font-size: 1.2vw;
+}
+.second {
+    display: flex;
+    position: relative;
+    padding: 1vw;
+    flex: 30%;
+}
+.second label {
+    font-size: 1.2vw;
+}
+.second select, input {
+    padding: 0.5vw 1vw;
+    margin: 0 1vw;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+}
+.third {
+    display: flex;
+    position: relative;
+    padding: 1vw;
+    flex: 30%;
+}
+.third label {
+    font-size: 1.2vw;
+}
+.third select {
+    padding: 0.5vw 1vw;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+}
+.fourth {
+    padding: 1vw;
+    display: flex;
+    flex: 3%;
+    align-items: center;
+    justify-content: center;
+    background-color: #425C5A;
+}
+.fourth a {
+    color: white;
+    font-size: 1.5vw;
+}
+.people {
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+.cabin {
+    position: absolute;
+    top: 0;
+    right: 40%;
+}
+
+.welcome {
+    display: flex;
+    height: 50vh;
+}
+.chooseus {
+    flex: 50%;
+    text-align: center;
+}
+.chooseus h2 {
+    text-align: justify;
+    font-size: 2vw;
+    padding: 1vw;
+    color: #425C5A;;
+}
+.chooseus ul {
+    columns: 2;
+    list-style: none;
+    height: 100%;
+    text-align: justify;
+    padding: 10px;
+}
+.chooseus ul li {
+    padding-top: 20px;
+    font-size: 2vw;
+}
+.chooseus ul li span {
+    font-size: 3vw;
+    padding-right: 2vw;
+    color: #A2BFBD;
+}
+.trips {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 50%;
+}
+.trip1 {
+    flex: 30%;
+    height: 90%;
+    margin: 10px;
+}
+.trip1-box {
+    background: url('./img/special-offers/algarve.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.trip1-box1 {
+   background: url('./img/special-offers/bali.jpg');
+   background-size: cover;
+    background-position: center;
+    height: 50%;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.trip2 {
+    flex: 30%;
+    height: 98%;
+    margin: 10px;
+}
+.trip2-box {
+    background: url('./img/special-offers/bora-bora.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    border-radius: 20px;
+}
+.trip3 {
+    flex: 30%;
+    height: 90%;
+    margin: 10px;
+}
+.trip3-box {
+    background: url('./img/special-offers/egypt.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.trip3-box1 {
+   background: url('./img/special-offers/sri-lanka.jpg');
+   background-size: cover;
+    background-position: center;
+    height: 50%;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.special-offers {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+}
+.spoff {
+    padding: 2vw;
+    font-size: 2vw;
+}
+.upper {
+    flex: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.offer2 img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.offer2 {
+    min-width: 25%;
+    margin: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid #425C5A;
+    border-left: 1px solid #425C5A;
+    border-right: 1px solid #425C5A;
+}
+.offer2-content h2 {
+    padding: 0.5vw;
+    font-size: 1.5vw;
+}
+.offer2-content ul {
+    columns: 2;
+    list-style: none;
+}
+.offer2-content ul li {
+    font-size: 1.2vw;
+    padding: 1vw;
+}
+.offer2-content ul li span {
+    padding-right: 1vw;
+}
+.offer2-buttons {
+    display: flex;
+    padding-bottom: 1vw;
+    justify-content: space-around;
+}
+.offer2-buttons a {
+    font-size: 1.3vw;
+    text-decoration: none;
+    padding: 0.5vw 2.5vw;
+    border-radius: 5px;
+}
+.book-travel form {
+    display: flex;
+}
+.now {
+    background-color: #425C5A;
+    color: white;
+}
+.learn-more {
+   color: #A2BFBD;
+   border: 1px solid #A2BFBD;
+}
+.book-now {
+    color: white;
+    border: 1px solid black;
+    background-color: #425C5A;
+}
+
+
+.downer {
+    flex: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.best-hotels-to-book {
+    display: flex;
+    flex-direction: column;
+    width: 50%;    
+}
+.best-hotels-to-book h2 {
+    padding: 1vw;
+    font-size: 2.5vw;
+    color: #425C5A;
+}
+.best-hotels-to-book p {
+    padding: 1.5vw;
+}
+.best-hotels-to-book a {
+    color: white;
+    padding: 1vw 3vw;
+    background-color: #425C5A;
+    font-size: 1.5vw;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.find-hotel {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1vw;
+}
+.hotels-to-book {
+    overflow-x: auto;
+}
+.hotels {
+    flex: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.hotel1 {
+    min-width: 25%;
+    margin: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid #425C5A;
+    border-left: 1px solid #425C5A;
+    border-right: 1px solid #425C5A;
+}
+.hotel1 img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.hotel1-content {
+    display: flex;
+    flex-direction: column;
+}
+.hotel1-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+}
+.gold-star {
+    color: gold;
+}
+.hotel1-content h2 {
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+.hotel1-content p {
+    font-size: 1.5vw;
+}
+.hotel1-content span {
+    font-size: 2vw;
+    padding: 0 1.2vw;
+}
+.arrow-right {
+    text-align: right;
+    color: #425C5A;
+    padding: 1vw;
+}
+
+.cars-for-rent {
+    overflow-x: auto;
+}
+.cars {
+    flex: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.car1 {
+    min-width: 25%;
+    margin: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid #425C5A;
+    border-left: 1px solid #425C5A;
+    border-right: 1px solid #425C5A;
+}
+.car1 img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.car1-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+}
+.rent-cars {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.rent-cars h2 {
+    padding: 1vw;
+    font-size: 2.5vw;
+    color: #425C5A;
+}
+.rent-cars p {
+    padding: 1.5vw;
+}
+.rent-cars a {
+    color: white;
+    padding: 1vw 3vw;
+    background-color: #425C5A;
+    font-size: 1.5vw;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.rent-car {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1vw;
+}
+.car1-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+}
+.car1-content h2 {
+    font-size: 1.5vw;
+}
+.car1-content p {
+    font-size: 1.5vw;
+}
+.car1-content span {
+    font-size: 2vw;
+    padding: 0 1.2vw;
+}
+.partnership-title {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.partnership-title h2 {
+    padding: 1vw;
+    font-size: 2.5vw;
+    color: #425C5A;
+}
+.partnership-title p {
+    padding: 1.5vw;
+}
+.partnership-title a {
+    color: white;
+    padding: 1vw 3vw;
+    background-color: #425C5A;;
+    font-size: 1.5vw;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.see-more {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1vw;
+}
+.partnerships {
+    overflow-x: auto;
+}
+.partnership {
+    flex: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.partnership1 {
+    min-width: 25%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.blog-and-news {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50vh;
+}
+.blog-and-news-title h1{
+    padding: 1vw;
+    font-size: 2.5vw;
+    color: #425C5A;
+}
+.blog {
+    display: flex;
+    width: 80%;
+    height: 100%;
+}
+.news-left {
+    flex: 50%;
+    display: flex;
+}
+.news-right {
+    flex: 50%;
+}
+.news1 {
+    background: url('./img/heart-island.jpg');
+    background-size: cover;
+    background-position: center;
+    flex: 100%;
+    border-radius: 20px;
+    margin: 1vw;
+}
+.news1 h2 {
+    font-size: 2vw;
+}
+.news2 {
+    background: url('./img/beach-1836335_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 45%;
+    border-radius: 20px;
+    margin: 1vw;
+    text-align: center;
+}
+.news2 h2 {
+    font-size: 2vw;
+}
+.news3 {
+    background: url('./img/hotairbaloons.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 45%;
+    border-radius: 20px;
+    margin: 1vw;
+}
+.news3 h2 {
+    font-size: 2vw;
+}
+
+.feedbacks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.comments {
+    flex: 50%;
+    text-align: center;
+    padding: 2vw;
+}
+.comments p {
+    padding: 0.5vw;
+    font-size: 1.2vw;
+}
+.stars {
+    color: #A2BFBD;
+}
+.land {
+    color: #425C5A;
+}
+.comment-author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    color: #425C5A;
+}
+.comment-author h2 {
+    padding: 0 6vw;
+    font-size: 2vw;
+}
+.globe {
+    flex: 50%;
+    text-align: center;
+    position: relative;
+}
+.globe img {
+    max-width: 100%;
+}
+.questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: url('./img/sea.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #425C5A;
+}
+
+.question-form {
+    background-color: rgba(223, 223, 223, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    height: 80%;
+    justify-content: center;
+}
+.question-form input {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1vw;
+    margin-top: 2vw;
+}
+.question-form textarea {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2vw;
+    margin-top: 2vw;
+    background-color: transparent;
+    height: 20%;
+}
+.checkbox-question {
+    display: flex;
+    padding: 1vw;
+    margin-top: 1vw;
+}
+.checkbox-question label {
+    padding: 1vw;
+    margin-top: 1vw;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    background-color: #425C5A;
+    color: white;
+    height: 80vh;
+    align-items: center;
+    text-align: justify;
+}
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+.footer-logo {
+   text-align: center;
+   padding-top: 1vw;
+}
+
+.footer-logo h1 {
+    color: white;
+    margin: 0;
+    font-size: 4vw;
+}
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    padding-top: 5px;
+}
+
+.contactus h3 {
+    padding-top: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social li {
+    font-size: 1.5rem;
+}
+.social li a {
+    color: white;
+}
+
+.dot1 {
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+  }
+
+  .dot2 {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(200, 42, 42);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+  }
+
+  .dot3 {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(18, 205, 31);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+
+  .dot4 {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 12, 206);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+
+  .dot5 {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    
+        nav {
+            display: none;
+        }
+
+        .icons ul li a{
+            font-size: 4vw;
+        }
+        
+        .book-travel form {
+            flex-direction: column;
+        }
+
+        .welcome {
+            flex-direction: column;
+        }
+
+        .best-hotels-to-book {
+            width: 100%;
+        }
+
+        .rent-cars {
+            width: 100%;
+        }
+
+        .partnership-title {
+            width: 100%;
+        }
+
+        .blog {
+            width: 100%;
+        }
+
+        .feedbacks {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .comments {
+            flex: 100%;
+        }
+
+        .globe {
+            flex: 100%;
+        }
+
+  }
