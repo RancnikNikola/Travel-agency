@@ -12,9 +12,12 @@ Special offers section
 
 <img width="1440" alt="chooseus" src="https://user-images.githubusercontent.com/35330678/203740539-a21231dc-c0f9-46c6-947c-96a00c028ce7.png">
 
-Responsive special offfers section
+Responsive choose us section
 
 <img width="501" alt="special-offers-responsive" src="https://user-images.githubusercontent.com/35330678/203740839-903f0d38-776b-43a4-a571-329585273906.png">
 
-Choose us section
+Special offers section
+
+<img width="1440" alt="sppffers-nonresponsive" src="https://user-images.githubusercontent.com/35330678/203742192-d4f098a6-6c48-43a6-92d6-dc25f8770d81.png">
+
 
